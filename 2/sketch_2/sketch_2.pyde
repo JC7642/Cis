@@ -9,7 +9,7 @@ def setup():
     xspeed = 10
     yspeed = 10 
     global slownik_kolorow
-    slownik_kolorow = {"czerwony":(255,0,0, 80), "niebieski":(0,0,255,80), "zielony":(0,255,0,80)}
+    slownik_kolorow = {"czerwony":(255,0,0, 80), "niebieski":(0,0,255,80), "zielony":(0,255,0,80)} # mógłbyś chociaż zmienić kolory, nie kusiło Cię to? ;)
     global lista_kolorow
     lista_kolorow = []
     
@@ -29,6 +29,7 @@ def draw():
     stroke(*slownik_kolorow["czerwony"])
     fill(*lista_kolorow[iteracja_programu%len(lista_kolorow)])
     rectMode(CENTER)
+    
     x += xspeed
     if (x > width or x < 0):
         xspeed *=-1;
@@ -38,6 +39,7 @@ def draw():
         yspeed *=-1
     rect(x, y, 70, 70)
     
-    
     if mousePressed:
         exit()
+        
+# 2pkt
