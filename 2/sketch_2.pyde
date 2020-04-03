@@ -37,3 +37,7 @@ def draw():
     if (y > height or y < 0):
         yspeed *=-1
     rect(x, y, 70, 70)
+    
+    
+    if mousePressed:
+        exit()
