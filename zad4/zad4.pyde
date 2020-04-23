@@ -25,10 +25,17 @@ def draw():
     global oku
     global oku2
     
-    
+    if keyPressed:
+        if key == CODED:
+            if keyCode == RIGHT:
+                image(oku,141,180,120,45)
+    if keyPressed:       
+        if key == CODED:
+            if keyCode == LEFT:
+                image(oku2,140,180,120,50)
     
     #image(oku,141,180,120,45)#1 para
-    image(oku2,140,180,120,50)#2 para
+    #image(oku2,140,180,120,50)#2 para
     
     
 def mousePressed():
