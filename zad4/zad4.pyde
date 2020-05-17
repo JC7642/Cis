@@ -1,19 +1,14 @@
 add_library('pdf')
 import random
 
-        
-
-
-
 def setup():
     global img
     global oku
     global oku2
-    size(400,400)
+    size(400,400) # to nie jest proporcja zdjęcia dokumentowego
     img = loadImage("foto.png")
     oku = loadImage("oku.png")
     oku2 = loadImage("oku2.png")
-   
     
     print(random.random())
     print(type(img))
@@ -36,5 +31,7 @@ def draw():
     
     
 def mousePressed():
-    endRecord()
+    endRecord() # to sprawi, że nagra się tyle warst plików ile klatek się wykona zanim się kliknie
     exit()
+    
+# 1,75pkt
