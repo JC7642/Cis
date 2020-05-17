@@ -2,7 +2,7 @@ def setup():
     size(600, 600)
     textSize(80)
     global bialy
-    bialy = (255, 255, 255, 255) # czasem warto stworzyć zmienną dla powtarzającego się elementu tak po prostu dlaczytelności
+    bialy = (255, 255, 255, 255) # czasem warto stworzyć zmienną dla powtarzającego się elementu tak po prostu dla czytelności
 
 def draw():
     print(pmouseX,pmouseY)
