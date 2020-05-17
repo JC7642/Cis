@@ -22,22 +22,20 @@ x = 0
  
 def setup():
     size(200,200)
-    global Plane1
-    global Plane2
-    global Plane3
+    global planes
     Plane1 = Plane(color(0,0,255),0,100,2)
     Plane2 = Plane(color(255,0,0),0,50,1)
     Plane3 = Plane(color(0,255,0),0, 150, 3)
+    planes= (Plane1, Plane2, Plane3)
 def draw():
     global x
     background(255)
-    Plane1.fly()
-    Plane1.display()
-    Plane2.fly()
-    Plane2.display()
-    Plane3.fly()
-    Plane3.display()
+    for plane in planes: # przy trzech już chyba warto spiąć w kolekcję ;)
+        plane.fly()
+        plane.display()
     x += 1
     print(x)
     if mousePressed:
         exit()
+        
+# 2 pkt, o to chodziło
