@@ -16,14 +16,18 @@ class PasiastyKwadrat(Kwadrat):
             _xLinii_ +=space
             
 class KwadratKolor(Kwadrat):
-    def sketchKolor(self, x, y, r, g, b):
-        fill(r,g,b)
+    def sketchKolor(self, x, y, kolor): # wygodniej podobne argumenty czasem zgrupować, by się ich nie zrobiło nie wiadomo ile
+        fill(*kolor)
         Kwadrat.sketch(self, x, y)
         
 def setup():
     size(500, 500)
     
+    blu = (0, 0, 255)
+    red = (255, 0, 0)
     Blu = KwadratKolor(50)
-    Blu.sketchKolor(0, 0, 0, 0, 255)
+    Blu.sketchKolor(0, 0, blu)
     Red = KwadratKolor(50)
-    Red.sketchKolor(450,450,255,0,0)
+    Red.sketchKolor(450,450, red)
+    
+#2pkt
