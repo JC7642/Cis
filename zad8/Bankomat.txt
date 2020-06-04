@@ -1,0 +1,14 @@
+class Konto:
+def __init____(self, stan = o):
+self.stan = stan
+
+
+def sprawdzStan():
+return self.stan
+
+def wyplac(self, amount):
+self.stan -= amount
+
+def wplac(self, amount):
+self.stan += amount
+
