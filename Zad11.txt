@@ -1,0 +1,12 @@
+Spotkanie w biurze.
+Prezes 1 firmy, mówi w jednym języku
+Prezes 2 firmy, mówi w drugim języku
+Tłumacz
+
+Prezes1:Obawiam się, że nie dojdziemy do porozumienia.
+Prezes2:Tak, mam wrażenie, że się nie dogadamy.
+Tłumacz:Proszę chwilę poczekać, myślę, że żadna ze stron nie zrozumiała drugiej. Zamierzam sprostować nieporozumienie.
+
+Wzorzec projektowy : Adapter - Tłumacz(adapter) ma za zadanie umożliwić porozumienie(umożliwienie współpracy) dwóm prezesom(niekompatybilnym interfejsom).
+
+JC7642
