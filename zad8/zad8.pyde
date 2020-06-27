@@ -38,7 +38,7 @@ def setup():
     global library, Jan
     books = ["Naocznosc", "Sens Sztuki", "Harry Potter", "Wladca Pierscieni"]
     library = Library(books)
-    Jan = Customer()
+    Jan = Customer() # zastąpiłeś zamiast dodać
     
 def draw():
     library.displayAvailableBooks()
@@ -55,3 +55,5 @@ def mouseClicked():
             library.lendBook(Jan.requestBook("Wladca Pierscieni"))
         if mouseY >40 and mouseY <60:
             library.addBook(Jan.returnBook())
+            
+#0,25/0,5pkt za tą część

@@ -1,4 +1,4 @@
-class Konto:
+class Konto: # tylko taka klasa dla całego funkcojnowania bankomatu?
 def __init____(self, stan = o):
 self.stan = stan
 
@@ -12,3 +12,4 @@ self.stan -= amount
 def wplac(self, amount):
 self.stan += amount
 
+# 0,25pkt
