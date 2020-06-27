@@ -9,4 +9,4 @@ Tłumacz:Proszę chwilę poczekać, myślę, że żadna ze stron nie zrozumiała
 
 Wzorzec projektowy : Adapter - Tłumacz(adapter) ma za zadanie umożliwić porozumienie(umożliwienie współpracy) dwóm prezesom(niekompatybilnym interfejsom).
 
-JC7642
+1,75pkt Tak, tłumacz to idealny przykłąd adaptera, dialog mógłby cóś faktycznie tłumaczyć, a nie móić o tym że zamierza.
