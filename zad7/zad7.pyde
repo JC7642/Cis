@@ -32,7 +32,7 @@ class Fox(Pet):
         self.name = name
     def speak(self):
         text('whatdoesthefoxsay', random(50, width-70), random(50, height-50))
-        return 'whatdoesthefoxsay'
+        return 'whatdoesthefoxsay' # a nie 'ringding...."?
     def __sub__(self, other):
         return self.name[0]+ ' i ' + other.name[0]
     
@@ -60,3 +60,4 @@ def mouseClicked():
         pet.speak()
         if isinstance(pet, Dog):
             pet.gimmePaw()
+# 1,75pkt
