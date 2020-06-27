@@ -63,7 +63,7 @@ def mouseClicked():
             
 class Test(unittest.TestCase):
     
-    def test_back(self):
+    def test_back(self): # to jest właśnie idealny przykład testu!
         books = ["Naocznosc", "Sens Sztuki", "Harry Potter", "Wladca Pierscieni"]
         test_books = ["Sens Sztuki", "Harry Potter", "Wladca Pierscieni", "Naocznosc"]
         library = Library(books)
@@ -75,10 +75,11 @@ class Test(unittest.TestCase):
         
     def test_order(self):
         books = ["Naocznosc", "Sens Sztuki", "Harry Potter", "Wladca Pierscieni"]
-        out = sorted(books)
+        out = sorted(books) # to testuje wbudowaną metodę Pythona, a nie kod
         self.assertEqual(out, ["Harry Potter", "Naocznosc", "Sens Sztuki", "Wladca Pierscieni"])
         
         
 if __name__ == '__main__':
     unittest.main()
-        
+
+# 1,75pkt    
